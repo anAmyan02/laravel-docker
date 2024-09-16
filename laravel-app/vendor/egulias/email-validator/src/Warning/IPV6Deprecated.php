@@ -2,13 +2,13 @@
 
 namespace Egulias\EmailValidator\Warning;
 
-class AddressLiteral extends Warning
+class IPV6Deprecated extends Warning
 {
-    public const CODE = 12;
+    public const CODE = 13;
 
     public function __construct()
     {
-        $this->message = 'Address literal in domain part';
+        $this->message = 'Deprecated form of IPV6';
         $this->rfcNumber = 5321;
     }
 }
